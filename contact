@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Get in Touch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        .review-btn {
+            background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 100%);
+            background-size: 200% auto;
+            transition: all 0.3s ease;
+        }
+        .review-btn:hover {
+            background-position: right center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-700">Contact Us</h1>
+            <p class="text-gray-600 mt-2">We'd love to hear from you!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <!-- Phone Card -->
+                <div class="contact-card bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone text-indigo-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Phone</h3>
+                            <p class="text-gray-600">Call us directly during business hours</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="tel:+1234567890" class="text-indigo-600 hover:text-indigo-800 text-xl font-medium block">+1 (234) 567-890</a>
+                        <p class="text-sm text-gray-500 mt-1">Monday - Friday: 9am - 5pm EST</p>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+                            <p class="text-gray-600">We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="mailto:contact@example.com" class="text-blue-600 hover:text-blue-800 text-xl font-medium block">contact@example.com</a>
+                        <p class="text-sm text-gray-500 mt-1">For general inquiries and support</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Card -->
+                <div class="contact-card bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-share-alt text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Social Media</h3>
+                            <p class="text-gray-600">Connect with us online</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="social-icon bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Reviews Card -->
+                <div class="contact-card bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fab fa-google text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Google Reviews</h3>
+                            <p class="text-gray-600">Share your experience with us</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" 
+                           target="_blank" 
+                           class="review-btn text-white font-medium py-3 px-6 rounded-lg inline-flex items-center">
+                            <i class="fab fa-google mr-2"></i> Write a Review
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">Help others by sharing your feedback</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" 
+                               required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" 
+                               required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <select id="subject" name="subject" 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" 
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" 
+                                  required></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-md transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Location</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373072308!2d-73.9878449242366!3d40.74844097138985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTMuNiJX!5e0!3m2!1sen!2sus!4v1623256789012!5m2!1sen!2sus" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Our Office</h3>
+                    <p class="text-gray-600 mt-1">123 Business Avenue, Suite 100<br>New York, NY 10001</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">We're dedicated to providing excellent service and building lasting relationships with our customers.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i> 123 Business Ave, NY
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i> +1 (234) 567-890
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> contact@example.com
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" 
+                           target="_blank" 
+                           class="inline-flex items-center text-sm text-gray-400 hover:text-white transition">
+                            <i class="fab fa-google mr-1"></i> Leave us a review
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you at ${email} soon.`);
+            
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
